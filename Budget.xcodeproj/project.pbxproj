@@ -15,6 +15,11 @@
 		506D43352CE43A8700965577 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43342CE43A8700965577 /* BudgetTests.swift */; };
 		506D433F2CE43A8700965577 /* BudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D433E2CE43A8700965577 /* BudgetUITests.swift */; };
 		506D43412CE43A8700965577 /* BudgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43402CE43A8700965577 /* BudgetUITestsLaunchTests.swift */; };
+		506D434E2CE43FD300965577 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D434D2CE43FD300965577 /* HomeView.swift */; };
+		506D43502CE80F2300965577 /* QuadrantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D434F2CE80F2300965577 /* QuadrantsView.swift */; };
+		506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43532CE905A800965577 /* ValuationOfDreamsView.swift */; };
+		506D43562CE905B900965577 /* DebitTabulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43552CE905B900965577 /* DebitTabulationView.swift */; };
+		506D43582CE905E700965577 /* FinancialXRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43572CE905E700965577 /* FinancialXRay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		506D433A2CE43A8700965577 /* BudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D433E2CE43A8700965577 /* BudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITests.swift; sourceTree = "<group>"; };
 		506D43402CE43A8700965577 /* BudgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		506D434D2CE43FD300965577 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		506D434F2CE80F2300965577 /* QuadrantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantsView.swift; sourceTree = "<group>"; };
+		506D43532CE905A800965577 /* ValuationOfDreamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuationOfDreamsView.swift; sourceTree = "<group>"; };
+		506D43552CE905B900965577 /* DebitTabulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitTabulationView.swift; sourceTree = "<group>"; };
+		506D43572CE905E700965577 /* FinancialXRay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialXRay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,11 @@
 			children = (
 				506D43212CE43A8600965577 /* BudgetApp.swift */,
 				506D43232CE43A8600965577 /* ContentView.swift */,
+				506D43532CE905A800965577 /* ValuationOfDreamsView.swift */,
+				506D43552CE905B900965577 /* DebitTabulationView.swift */,
+				506D434D2CE43FD300965577 /* HomeView.swift */,
+				506D434F2CE80F2300965577 /* QuadrantsView.swift */,
+				506D43572CE905E700965577 /* FinancialXRay.swift */,
 				506D43252CE43A8600965577 /* Item.swift */,
 				506D43272CE43A8700965577 /* Assets.xcassets */,
 				506D43292CE43A8700965577 /* Preview Content */,
@@ -260,9 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506D43562CE905B900965577 /* DebitTabulationView.swift in Sources */,
 				506D43242CE43A8600965577 /* ContentView.swift in Sources */,
+				506D434E2CE43FD300965577 /* HomeView.swift in Sources */,
+				506D43502CE80F2300965577 /* QuadrantsView.swift in Sources */,
 				506D43262CE43A8600965577 /* Item.swift in Sources */,
 				506D43222CE43A8600965577 /* BudgetApp.swift in Sources */,
+				506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */,
+				506D43582CE905E700965577 /* FinancialXRay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
