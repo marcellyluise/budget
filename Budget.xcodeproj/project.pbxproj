@@ -15,6 +15,14 @@
 		506D43352CE43A8700965577 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43342CE43A8700965577 /* BudgetTests.swift */; };
 		506D433F2CE43A8700965577 /* BudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D433E2CE43A8700965577 /* BudgetUITests.swift */; };
 		506D43412CE43A8700965577 /* BudgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43402CE43A8700965577 /* BudgetUITestsLaunchTests.swift */; };
+		506D434E2CE43FD300965577 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D434D2CE43FD300965577 /* HomeView.swift */; };
+		506D43502CE80F2300965577 /* QuadrantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D434F2CE80F2300965577 /* QuadrantsView.swift */; };
+		506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43532CE905A800965577 /* ValuationOfDreamsView.swift */; };
+		506D43562CE905B900965577 /* DebitTabulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43552CE905B900965577 /* DebitTabulationView.swift */; };
+		506D43582CE905E700965577 /* FinancialXRayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43572CE905E700965577 /* FinancialXRayView.swift */; };
+		506D43652CE9308F00965577 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43642CE9308F00965577 /* TransactionModel.swift */; };
+		506D43682CE930C800965577 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43672CE930C800965577 /* TransactionProtocol.swift */; };
+		506D436A2CE930E900965577 /* TransactionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43692CE930E900965577 /* TransactionEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,14 @@
 		506D433A2CE43A8700965577 /* BudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D433E2CE43A8700965577 /* BudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITests.swift; sourceTree = "<group>"; };
 		506D43402CE43A8700965577 /* BudgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		506D434D2CE43FD300965577 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		506D434F2CE80F2300965577 /* QuadrantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantsView.swift; sourceTree = "<group>"; };
+		506D43532CE905A800965577 /* ValuationOfDreamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuationOfDreamsView.swift; sourceTree = "<group>"; };
+		506D43552CE905B900965577 /* DebitTabulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitTabulationView.swift; sourceTree = "<group>"; };
+		506D43572CE905E700965577 /* FinancialXRayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialXRayView.swift; sourceTree = "<group>"; };
+		506D43642CE9308F00965577 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		506D43672CE930C800965577 /* TransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProtocol.swift; sourceTree = "<group>"; };
+		506D43692CE930E900965577 /* TransactionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +112,10 @@
 		506D43202CE43A8600965577 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				506D43632CE9303E00965577 /* Model */,
 				506D43212CE43A8600965577 /* BudgetApp.swift */,
-				506D43232CE43A8600965577 /* ContentView.swift */,
-				506D43252CE43A8600965577 /* Item.swift */,
-				506D43272CE43A8700965577 /* Assets.xcassets */,
+				506D43622CE92FB400965577 /* Features */,
+				506D43602CE92F8300965577 /* Resources */,
 				506D43292CE43A8700965577 /* Preview Content */,
 			);
 			path = Budget;
@@ -128,6 +144,102 @@
 				506D43402CE43A8700965577 /* BudgetUITestsLaunchTests.swift */,
 			);
 			path = BudgetUITests;
+			sourceTree = "<group>";
+		};
+		506D43592CE92EF200965577 /* Financial X-Ray */ = {
+			isa = PBXGroup;
+			children = (
+				506D43572CE905E700965577 /* FinancialXRayView.swift */,
+			);
+			path = "Financial X-Ray";
+			sourceTree = "<group>";
+		};
+		506D435A2CE92F4500965577 /* Valuation of Dreams */ = {
+			isa = PBXGroup;
+			children = (
+				506D43532CE905A800965577 /* ValuationOfDreamsView.swift */,
+			);
+			path = "Valuation of Dreams";
+			sourceTree = "<group>";
+		};
+		506D435B2CE92F5000965577 /* Debit Tabilation */ = {
+			isa = PBXGroup;
+			children = (
+				506D43552CE905B900965577 /* DebitTabulationView.swift */,
+			);
+			path = "Debit Tabilation";
+			sourceTree = "<group>";
+		};
+		506D435C2CE92F5800965577 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				506D434D2CE43FD300965577 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		506D435D2CE92F5F00965577 /* Quadrants */ = {
+			isa = PBXGroup;
+			children = (
+				506D434F2CE80F2300965577 /* QuadrantsView.swift */,
+			);
+			path = Quadrants;
+			sourceTree = "<group>";
+		};
+		506D435E2CE92F6B00965577 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				506D43252CE43A8600965577 /* Item.swift */,
+				506D43232CE43A8600965577 /* ContentView.swift */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
+		506D43602CE92F8300965577 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				506D43612CE92F9900965577 /* AppStore Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		506D43612CE92F9900965577 /* AppStore Assets */ = {
+			isa = PBXGroup;
+			children = (
+				506D43272CE43A8700965577 /* Assets.xcassets */,
+			);
+			path = "AppStore Assets";
+			sourceTree = "<group>";
+		};
+		506D43622CE92FB400965577 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				506D435E2CE92F6B00965577 /* Temp */,
+				506D435A2CE92F4500965577 /* Valuation of Dreams */,
+				506D435B2CE92F5000965577 /* Debit Tabilation */,
+				506D435C2CE92F5800965577 /* Home */,
+				506D435D2CE92F5F00965577 /* Quadrants */,
+				506D43592CE92EF200965577 /* Financial X-Ray */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		506D43632CE9303E00965577 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				506D43662CE930B300965577 /* Transaction */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		506D43662CE930B300965577 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				506D43642CE9308F00965577 /* TransactionModel.swift */,
+				506D43672CE930C800965577 /* TransactionProtocol.swift */,
+				506D43692CE930E900965577 /* TransactionEnum.swift */,
+			);
+			path = Transaction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +372,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506D43652CE9308F00965577 /* TransactionModel.swift in Sources */,
+				506D43562CE905B900965577 /* DebitTabulationView.swift in Sources */,
+				506D436A2CE930E900965577 /* TransactionEnum.swift in Sources */,
 				506D43242CE43A8600965577 /* ContentView.swift in Sources */,
+				506D434E2CE43FD300965577 /* HomeView.swift in Sources */,
+				506D43682CE930C800965577 /* TransactionProtocol.swift in Sources */,
+				506D43502CE80F2300965577 /* QuadrantsView.swift in Sources */,
 				506D43262CE43A8600965577 /* Item.swift in Sources */,
 				506D43222CE43A8600965577 /* BudgetApp.swift in Sources */,
+				506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */,
+				506D43582CE905E700965577 /* FinancialXRayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
