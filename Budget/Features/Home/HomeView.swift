@@ -16,7 +16,7 @@ struct HomeView: View {
         TabView(selection: /*@START_MENU_TOKEN@*/.constant(1)/*@END_MENU_TOKEN@*/,
                 content:  {
             
-            FinancialXRay().tabItem {
+            FinancialXRayView().tabItem {
                 Text("Financial X-Ray").tag(4)
             }.modelContainer(for: [Incoming.self,
                                    FixedExpense.self,

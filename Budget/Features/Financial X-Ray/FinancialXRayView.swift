@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct FinancialXRay: View {
+struct FinancialXRayView: View {
     
     @Environment(\.modelContext) private var modelContext
     @Query private var incomings: [Incoming]
@@ -24,7 +24,7 @@ struct FinancialXRay: View {
 }
 
 #Preview {
-    FinancialXRay().modelContainer(for: [Incoming.self, 
+    FinancialXRayView().modelContainer(for: [Incoming.self, 
                                          FixedExpense.self,
                                          VariableExpense.self,
                                          SeasonalExpense.self,

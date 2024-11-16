@@ -19,7 +19,7 @@
 		506D43502CE80F2300965577 /* QuadrantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D434F2CE80F2300965577 /* QuadrantsView.swift */; };
 		506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43532CE905A800965577 /* ValuationOfDreamsView.swift */; };
 		506D43562CE905B900965577 /* DebitTabulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43552CE905B900965577 /* DebitTabulationView.swift */; };
-		506D43582CE905E700965577 /* FinancialXRay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43572CE905E700965577 /* FinancialXRay.swift */; };
+		506D43582CE905E700965577 /* FinancialXRayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43572CE905E700965577 /* FinancialXRayView.swift */; };
 		506D43652CE9308F00965577 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43642CE9308F00965577 /* TransactionModel.swift */; };
 		506D43682CE930C800965577 /* TransactionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43672CE930C800965577 /* TransactionProtocol.swift */; };
 		506D436A2CE930E900965577 /* TransactionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D43692CE930E900965577 /* TransactionEnum.swift */; };
@@ -58,7 +58,7 @@
 		506D434F2CE80F2300965577 /* QuadrantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadrantsView.swift; sourceTree = "<group>"; };
 		506D43532CE905A800965577 /* ValuationOfDreamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuationOfDreamsView.swift; sourceTree = "<group>"; };
 		506D43552CE905B900965577 /* DebitTabulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitTabulationView.swift; sourceTree = "<group>"; };
-		506D43572CE905E700965577 /* FinancialXRay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialXRay.swift; sourceTree = "<group>"; };
+		506D43572CE905E700965577 /* FinancialXRayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialXRayView.swift; sourceTree = "<group>"; };
 		506D43642CE9308F00965577 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		506D43672CE930C800965577 /* TransactionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionProtocol.swift; sourceTree = "<group>"; };
 		506D43692CE930E900965577 /* TransactionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEnum.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 		506D43592CE92EF200965577 /* Financial X-Ray */ = {
 			isa = PBXGroup;
 			children = (
-				506D43572CE905E700965577 /* FinancialXRay.swift */,
+				506D43572CE905E700965577 /* FinancialXRayView.swift */,
 			);
 			path = "Financial X-Ray";
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 				506D43262CE43A8600965577 /* Item.swift in Sources */,
 				506D43222CE43A8600965577 /* BudgetApp.swift in Sources */,
 				506D43542CE905A800965577 /* ValuationOfDreamsView.swift in Sources */,
-				506D43582CE905E700965577 /* FinancialXRay.swift in Sources */,
+				506D43582CE905E700965577 /* FinancialXRayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
