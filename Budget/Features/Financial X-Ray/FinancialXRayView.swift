@@ -24,13 +24,23 @@ struct FinancialXRayView: View {
         }
     }
     
+    private func deleteTransaction(offsets: IndexSet) {
+        withAnimation {
+            for offset in offsets {
+                modelContext.delete(incomings[offset])
+            }
+        }
+    }
+    
     var body: some View {
         NavigationSplitView {
             List {
                 Section {
                     ForEach(incomings) { income in
                         Text("Due day: \(income.dueDay), Value: \(income.value)")
-                    }
+                    }.onDelete(perform: { indexSet in
+                        deleteTransaction(offsets: indexSet)
+                    })
                 } header: {
                     Text("Incoming")
                 }
@@ -66,7 +76,8 @@ struct FinancialXRayView: View {
                 } header: {
                     Text("Debt")
                 }
-            }.toolbar(content: {
+            }
+            .toolbar(content: {
 
                 ToolbarItem {
                     Button(action: addTransaction) {
