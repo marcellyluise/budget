@@ -17,9 +17,66 @@ struct FinancialXRayView: View {
     @Query private var seasonalExpenses: [SeasonalExpense]
     @Query private var debts: [DebitExpense]
     
+    private func addTransaction() {
+        withAnimation {
+            let newTransaction = Incoming(value: 10000, name: "Salário", dueDay: 10)
+            modelContext.insert(newTransaction)
+        }
+    }
+    
     var body: some View {
-        Text("wip")
+        NavigationSplitView {
+            List {
+                Section {
+                    ForEach(incomings) { income in
+                        Text("Due day: \(income.dueDay), Value: \(income.value)")
+                    }
+                } header: {
+                    Text("Incoming")
+                }
+                
+                Section {
+                    ForEach(fixedExpenses) { fixedExpense in
+                        Text("Due day: \(fixedExpense.dueDay), Value: \(fixedExpense.value)")
+                    }
+                } header: {
+                    Text("Fixed Expenses")
+                }
+                
+                Section {
+                    ForEach(variableExpenses) { variableExpense in
+                        Text("Due day: \(variableExpense.dueDay), Value: \(variableExpense.value)")
+                    }
+                } header: {
+                    Text("Variable Expenses")
+                }
+                
+                Section {
+                    ForEach(seasonalExpenses) { seasonalExpense in
+                        Text("Due date: \(seasonalExpense.dueDay), Value: \(seasonalExpense.value)")
+                    }
+                } header: {
+                    Text("Seasonal Expenses")
+                }
+                
+                Section {
+                    ForEach(debts) { debt in
+                        Text("Due data: \(debt.dueDay), Value: \(debt.value)")
+                    }
+                } header: {
+                    Text("Debt")
+                }
+            }.toolbar(content: {
 
+                ToolbarItem {
+                    Button(action: addTransaction) {
+                        Label("Add", systemImage: "plus")
+                    }
+                }
+            })
+        } detail: {
+            Text("Select an transaction")
+        }
     }
 }
 
