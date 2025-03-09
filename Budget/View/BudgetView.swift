@@ -26,7 +26,7 @@ struct BudgetView: View {
             }
             
             Tab("Budget", systemImage: "") {
-                BudgetOverview()
+                BudgetOverviewView()
             }
             
         }.tabViewStyle(.sidebarAdaptable)
@@ -35,4 +35,5 @@ struct BudgetView: View {
 
 #Preview {
     BudgetView()
+        .modelContainer(for: [Expenses.self], inMemory: true)
 }

@@ -1,5 +1,5 @@
 //
-//  ExpensesView.swift
+//  BudgetOverviewView.swift
 //  Budget
 //
 //  Created by Marcelly.Godinho on 09/03/25.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ExpensesView: View {
+struct BudgetOverviewView: View {
     var body: some View {
-        Text("65% Expenses")
+        Text("Budget Overview")
     }
 }
 
 #Preview {
-    ExpensesView()
+    BudgetOverviewView()
 }
