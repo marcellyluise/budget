@@ -25,7 +25,7 @@ struct BudgetApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BudgetView()
         }
         .modelContainer(sharedModelContainer)
     }

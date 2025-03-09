@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct BudgetView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            Tab("15% Reserve", systemImage: "") {
+                ReserveView()
+            }
+            
+            Tab("20% Guilty Free", systemImage: "") {
+                GuiltFreeView()
+            }
+            
+            Tab("65% Expenses", systemImage: "") {
+                ExpensesView()
+            }
+            
+            Tab("Budget", systemImage: "") {
+                BudgetOverview()
+            }
+            
+        }.tabViewStyle(.sidebarAdaptable)
     }
 }
 
