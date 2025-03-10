@@ -35,5 +35,5 @@ struct BudgetView: View {
 
 #Preview {
     BudgetView()
-        .modelContainer(for: [Expense.self], inMemory: true)
+        .modelContainer(for: [Expense.self, Income.self], inMemory: true)
 }

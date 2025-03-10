@@ -12,7 +12,7 @@ import SwiftData
 struct BudgetApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Expense.self, Incoming.self
+            Expense.self, Income.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
