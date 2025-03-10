@@ -11,7 +11,7 @@ import SwiftData
 struct ExpensesView: View {
     
     @Environment(\.modelContext) private var modelContext
-    @Query private var expenses: [Expenses]
+    @Query private var expenses: [Expense]
     
     var body: some View {
         NavigationView {
@@ -31,7 +31,7 @@ struct ExpensesView: View {
     
     private func addExpense() {
         withAnimation {
-            let newExpense = Expenses(name: "Expense", value: Date().timeIntervalSinceNow)
+            let newExpense = Expense(name: "Expense", value: Date().timeIntervalSinceNow)
             modelContext.insert(newExpense)
         }
     }
@@ -39,5 +39,5 @@ struct ExpensesView: View {
 
 #Preview {
     ExpensesView()
-        .modelContainer(for: Expenses.self, inMemory: true)
+        .modelContainer(for: Expense.self, inMemory: true)
 }
