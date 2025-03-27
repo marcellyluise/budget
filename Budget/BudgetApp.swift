@@ -2,7 +2,7 @@
 //  BudgetApp.swift
 //  Budget
 //
-//  Created by Marcelly.Godinho on 12/11/24.
+//  Created by Marcelly.Godinho on 08/03/25.
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ import SwiftData
 struct BudgetApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Expense.self, Income.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct BudgetApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            BudgetView()
         }
         .modelContainer(sharedModelContainer)
     }

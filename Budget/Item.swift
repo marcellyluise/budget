@@ -2,7 +2,7 @@
 //  Item.swift
 //  Budget
 //
-//  Created by Marcelly.Godinho on 12/11/24.
+//  Created by Marcelly.Godinho on 08/03/25.
 //
 
 import Foundation
@@ -16,4 +16,3 @@ final class Item {
         self.timestamp = timestamp
     }
 }
-

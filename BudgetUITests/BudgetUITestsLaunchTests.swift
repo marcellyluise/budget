@@ -2,7 +2,7 @@
 //  BudgetUITestsLaunchTests.swift
 //  BudgetUITests
 //
-//  Created by Marcelly.Godinho on 12/11/24.
+//  Created by Marcelly.Godinho on 08/03/25.
 //
 
 import XCTest
@@ -17,6 +17,7 @@ final class BudgetUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
+    @MainActor
     func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
